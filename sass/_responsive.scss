@@ -1,0 +1,28 @@
+
+/* Responsive layout - when the screen is less than 1200px wide,
+  - make the two columns stack on top of each other instead of next to each other 
+*/
+@media screen and (max-width: 1200px) {
+  .profile {
+    &-content {
+      flex-direction: column;
+    }
+    &-img {
+      background: {
+        size: cover;
+        position: center top;
+        // attachment: unset;
+      }
+    }
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide,
+  - make the navigation links stack on top of each other instead of next to each other 
+*/
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}

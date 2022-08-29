@@ -1,0 +1,196 @@
+:root {
+  --main-color: #1abc9c;
+  --main-layer: rgba(26, 188, 156, 0.8);
+  --secondary-layer: rgba(121, 223, 202, 0.963);
+}
+
+::selection {
+  background-color: rgba(195, 235, 227, 0.963);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 200px 80px;
+  text-align: center;
+  background: url("../images/bg-image.jpg") center 55%/cover fixed;
+  color: white;
+  position: relative;
+}
+@media screen and (max-width: 1200px) {
+  .header {
+    background-position-y: -33px;
+    background-size: 100vw;
+  }
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-layer);
+}
+.header h1,
+.header p {
+  margin-top: 0;
+  font-size: 40px;
+  position: relative;
+}
+
+.profile-content {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 29%; /* IE10 */
+  flex: 29%;
+  background-color: #f1f1f1;
+  border-left: 4px solid var(--secondary-layer);
+}
+
+.section-name {
+  font-size: 2rem;
+  padding: 1.5rem 1rem;
+  margin: 0;
+  background-color: var(--main-color);
+  border-left: 4px solid var(--secondary-layer);
+}
+
+/* Main column */
+.main {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  border-left: 4px solid var(--secondary-layer);
+}
+
+.profile-item {
+  padding: 1rem 1.7rem;
+  border-bottom: 3px solid var(--main-color);
+}
+.profile-item:not(:last-of-type) {
+  border-bottom-style: dotted;
+}
+.profile-item:nth-of-type(odd) {
+  background-color: var(--main-layer);
+}
+.profile-item:nth-of-type(even) {
+  background-color: var(--secondary-layer);
+}
+
+.skills {
+  padding: 20px;
+  padding-top: 0;
+}
+.skills-category {
+  width: fit-content;
+  color: var(--main-color);
+  padding: 0 10px 10px 0;
+  border-bottom: 5px solid var(--main-color);
+}
+.skills .skill {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+.skills .skill-name {
+  font-size: 1.2rem;
+}
+.skills .skill-level {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.skills .skill-level li {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--secondary-layer);
+  margin: 0 0.3rem;
+  border-radius: 50%;
+}
+.skills .skill-level li.active {
+  background-color: var(--main-color);
+}
+
+.profile-img {
+  background-color: #aaa;
+  background-attachment: fixed;
+  background-position-x: right;
+  background-position-y: top;
+  background-size: 70vw;
+  background-repeat: no-repeat;
+  border: 2px solid var(--main-color);
+  border-radius: 1rem;
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+}
+
+.footer {
+  background: var(--main-color);
+}
+.footer .navbar {
+  display: flex;
+  justify-content: center;
+}
+.footer .navbar ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.footer .navbar ul li {
+  padding: 1.9rem;
+  font-size: 2rem;
+}
+.footer .navbar ul li a {
+  text-decoration: none;
+}
+.footer .navbar ul li a .fa-twitter {
+  color: #1da1f2;
+}
+.footer .navbar ul li a .fa-github-alt {
+  color: #4078c0;
+}
+.footer .navbar ul li a .fa-youtube,
+.footer .navbar ul li a .fa-envelope-o {
+  color: #ff0000;
+}
+
+/* Responsive layout - when the screen is less than 1200px wide,
+  - make the two columns stack on top of each other instead of next to each other 
+*/
+@media screen and (max-width: 1200px) {
+  .profile-content {
+    flex-direction: column;
+  }
+  .profile-img {
+    background-size: cover;
+    background-position: center top;
+  }
+}
+/* Responsive layout - when the screen is less than 400px wide,
+  - make the navigation links stack on top of each other instead of next to each other 
+*/
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}

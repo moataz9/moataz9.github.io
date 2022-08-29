@@ -1,0 +1,102 @@
+// Column container
+.profile-content {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+// Create two unequal columns that sits next to each other Sidebar/left column
+.side {
+  -ms-flex: 29%; /* IE10 */
+  flex: 29%;
+  background-color: #f1f1f1;
+  border-left: 4px solid var(--secondary-layer);
+}
+
+.section-name {
+  // text-align: center;
+  font-size: 2rem;
+  padding: 1.5rem 1rem;
+  margin: 0;
+  background-color: var(--main-color);
+  border-left: 4px solid var(--secondary-layer);
+  // border-top: 4px solid var(--secondary-layer);
+}
+
+/* Main column */
+.main {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  // padding: 20px;
+  border-left: 4px solid var(--secondary-layer);
+}
+
+.profile-item {
+  padding: 1rem 1.7rem;
+  border-bottom: 3px solid var(--main-color);
+  &:not(:last-of-type) {
+    border-bottom-style: dotted;
+  }
+  &:nth-of-type(odd) {
+    background-color: var(--main-layer);
+  }
+  &:nth-of-type(even) {
+    background-color: var(--secondary-layer);
+  }
+}
+
+// Skills
+.skills {
+  padding: 20px;
+  padding-top: 0;
+  &-category {
+    width: fit-content;
+    color: var(--main-color);
+    padding: 0 10px 10px 0;
+    border-bottom: 5px solid var(--main-color);
+  }
+  .skill {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    &-name {
+      font-size: 1.2rem;
+    }
+    &-level {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li {
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: var(--secondary-layer);
+        margin: 0 0.3rem;
+        border-radius: 50%;
+        &.active {
+          background-color: var(--main-color);
+        }
+      }
+    }
+  }
+}
+
+.profile-img {
+  background: {
+    color: #aaa;
+    attachment: fixed;
+    position-x: right;
+    position-y: top;
+    size: 70vw;
+    repeat: no-repeat;
+  }
+  border: 2px solid var(--main-color);
+  border-radius: 1rem;
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+}

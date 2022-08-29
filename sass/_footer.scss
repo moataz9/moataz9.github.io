@@ -1,0 +1,32 @@
+// Footer
+.footer {
+  background: var(--main-color);
+  // Style the top navigation bar
+  .navbar {
+    display: flex;
+    justify-content: center;
+    ul {
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      li {
+        padding: 1.9rem;
+        font-size: 2rem;
+        a {
+          text-decoration: none;
+          .fa-twitter {
+            color: #1da1f2;
+          }
+          .fa-github-alt {
+            color: #4078c0;
+          }
+          .fa-youtube,
+          .fa-envelope-o {
+            color: #ff0000;
+          }
+        }
+      }
+    }
+  }
+}
