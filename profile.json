@@ -73,6 +73,11 @@
       "level": 5
     },
     {
+      "category": "VUE eco-systems",
+      "name": "Pinia",
+      "level": 5
+    },
+    {
       "category": "Serverless Solution",
       "name": "firebase",
       "level": 3
@@ -90,6 +95,11 @@
     {
       "category": "UI frameworks",
       "name": "Tailwind CSS",
+      "level": 4
+    },
+    {
+      "category": "UI frameworks",
+      "name": "Quasar",
       "level": 4
     },
     {
