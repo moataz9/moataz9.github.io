@@ -1,6 +1,15 @@
 {
   "projects": [
     {
+      "name": "Nuxt 3 Hygraph Blog",
+      "start_date": "Oct 13, 2022",
+      "finish_date": "Oct 17, 2022",
+      "description": "Blog build with nuxt3, vue3, TypeScript, TailwindCss and graphql with hygraph CMS.",
+      "img_src": "./images/nuxt_3_hygraph_blog.png",
+      "repo": "https://github.com/moataz9/nuxt_3_hygraph_blog",
+      "live_preview": "https://nuxt-3-hygraph-blog.netlify.app"
+    },
+    {
       "name": "Games With Vite and TS",
       "start_date": "Aug 1, 2022",
       "finish_date": "Aug 30, 2022",
