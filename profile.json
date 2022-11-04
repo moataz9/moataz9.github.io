@@ -1,6 +1,15 @@
 {
   "projects": [
     {
+      "name": "Nuxt 3 Modern UI/UX",
+      "start_date": "Nov 3, 2022",
+      "finish_date": "Nov 4, 2022",
+      "description": "Modern UI/UX built with nuxt3, vue3, And SASS (Without any UI framework).",
+      "img_src": "./images/modern_ui_ux.png",
+      "repo": "https://github.com/moataz9/nuxt3_modern_ui_ux",
+      "live_preview": "https://nuxt-3-modern-ui-ux.netlify.app"
+    },
+    {
       "name": "Nuxt 3 Hygraph Blog",
       "start_date": "Oct 13, 2022",
       "finish_date": "Oct 17, 2022",
