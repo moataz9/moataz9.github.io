@@ -1,6 +1,15 @@
 {
   "projects": [
     {
+      "name": "Nuxt 3 Music Player with Pinia Store",
+      "start_date": "Nov 6, 2022",
+      "finish_date": "Nov 13, 2022",
+      "description": "Modern Music Player built with nuxt3, vue3, Pinia, TailwindCSS and Shazam Core rapidAPI.",
+      "img_src": "./images/nuxt-3-music-player.png",
+      "repo": "https://github.com/moataz9/nuxt-3-music-player",
+      "live_preview": "https://nuxt-3-music-player-moataz9.netlify.app/"
+    },
+    {
       "name": "Nuxt 3 Modern UI/UX",
       "start_date": "Nov 3, 2022",
       "finish_date": "Nov 4, 2022",
@@ -31,7 +40,7 @@
       "name": "Full front-app for Store with Nuxt/Vue",
       "finish_date": "Jul 1, 2021",
       "start_date": "Jul 31, 2021",
-      "description": "E-commerce build with Nuxt/vue and BootstarpVue. to get benefit from its Features like SPA, Routing, Vuex state management and etc.",
+      "description": "E-commerce build with Nuxt/vue and BootstrapVue. to get benefit from its Features like SPA, Routing, Vuex state management and etc.",
       "img_src": "./images/nuxt-ecommerce.png",
       "repo": "https://github.com/moataz9/nuxt-ecommerce-app",
       "live_preview": "https://nuxt-ecommerce-e3fb1b.netlify.app"
